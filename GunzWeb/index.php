@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gunz Online</title>
+    <title>7 Days to Die - Zombie Survival</title>
     <style>
         * {
             margin: 0;
@@ -22,7 +22,7 @@
 
         /* Announcement Bar */
         .announcement-bar {
-            background: linear-gradient(90deg, #2196F3, #1976D2);
+            background: linear-gradient(90deg, #8B0000, #3D0000);
             padding: 8px 20px;
             text-align: center;
             font-size: 12px;
@@ -39,7 +39,7 @@
             align-items: center;
             justify-content: center;
             overflow: hidden;
-            border-bottom: 1px solid #1A2D42;
+            border-bottom: 1px solid #3A1B1B;
         }
 
         .hero::before {
@@ -50,7 +50,15 @@
             right: 0;
             bottom: 0;
             background: url('assets/images/banner.jpg') center/cover;
-            opacity: 0.15;
+            opacity: 0.12;
+            filter: grayscale(1) contrast(1.2);
+        }
+
+        .hero::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: radial-gradient(circle at center, rgba(211,47,47,0.15), rgba(0,0,0,0.75));
         }
 
         .hero-content {
@@ -69,7 +77,7 @@
         }
 
         .hero h1 span {
-            color: #2196F3;
+            color: #D32F2F;
         }
 
         .hero p {
@@ -79,7 +87,7 @@
             text-transform: uppercase;
         }
 
-        /* Featured Items Section */
+        /* Zombie Survival Loadout Section */
         .section {
             padding: 16px;
         }
@@ -90,7 +98,7 @@
             align-items: center;
             margin-bottom: 12px;
             padding-bottom: 10px;
-            border-bottom: 1px solid #1A2D42;
+            border-bottom: 1px solid #3A1B1B;
         }
 
         .section-title {
@@ -114,12 +122,12 @@
             padding: 12px;
             text-align: center;
             transition: all 0.2s ease;
-            border: 1px solid #1A2D42;
+            border: 1px solid #3A1B1B;
             cursor: pointer;
         }
 
         .item-card:hover {
-            border-color: #2196F3;
+            border-color: #D32F2F;
             background: linear-gradient(180deg, #101E2E 0%, #0C1620 100%);
         }
 
@@ -127,7 +135,7 @@
             width: 50px;
             height: 50px;
             margin: 0 auto 8px;
-            background: linear-gradient(180deg, #1A2D42 0%, #132030 100%);
+            background: linear-gradient(180deg, #3A1B1B 0%, #132030 100%);
             border-radius: 6px;
             display: flex;
             align-items: center;
@@ -155,22 +163,23 @@
 
         .item-price {
             font-size: 11px;
-            color: #2196F3;
+            color: #D32F2F;
             font-weight: 600;
         }
 
         .item-price.cash {
-            color: #42A5F5;
+            color: #FF7043;
         }
 
         /* Category Icons */
-        .cat-melee::before { content: '⚔️'; }
-        .cat-rifle::before { content: '🎯'; }
-        .cat-smg::before { content: '🔫'; }
-        .cat-shotgun::before { content: '💥'; }
-        .cat-pistol::before { content: '🔫'; }
+        .cat-food::before { content: '🥫'; }
+        .cat-zombie::before { content: '🧟'; }
+        .cat-weapon::before { content: '🪓'; }
+        .cat-tool::before { content: '🔧'; }
+        .cat-medical::before { content: '💉'; }
         .cat-armor::before { content: '🛡️'; }
-        .cat-accessory::before { content: '💎'; }
+        .cat-ammo::before { content: '🔩'; }
+        .cat-accessory::before { content: '🩸'; }
 
         /* No items message */
         .no-items {
@@ -190,12 +199,12 @@
         }
 
         ::-webkit-scrollbar-thumb {
-            background: #1A2D42;
+            background: #3A1B1B;
             border-radius: 2px;
         }
 
         ::-webkit-scrollbar-thumb:hover {
-            background: #2A4A6A;
+            background: #5A2A2A;
         }
 
         /* Loading state */
@@ -211,7 +220,7 @@
             display: inline-block;
             width: 16px;
             height: 16px;
-            border: 2px solid #2196F3;
+            border: 2px solid #D32F2F;
             border-top-color: transparent;
             border-radius: 50%;
             animation: spin 1s linear infinite;
@@ -230,7 +239,7 @@
             gap: 30px;
             padding: 12px;
             background: linear-gradient(180deg, #0E1822 0%, #0A1218 100%);
-            border-bottom: 1px solid #1A2D42;
+            border-bottom: 1px solid #3A1B1B;
         }
 
         .stat-item {
@@ -240,7 +249,7 @@
         .stat-value {
             font-size: 18px;
             font-weight: 700;
-            color: #2196F3;
+            color: #D32F2F;
         }
 
         .stat-label {
@@ -257,8 +266,8 @@
 
     <div class="hero">
         <div class="hero-content">
-            <h1 id="hero-title">GUNZ <span>ONLINE</span></h1>
-            <p id="hero-subtitle">Season 2 Now Live</p>
+            <h1 id="hero-title">7 DAYS TO <span>DIE</span></h1>
+            <p id="hero-subtitle">Blood Moon Survival Network</p>
         </div>
     </div>
 
@@ -275,7 +284,7 @@
 
     <div class="section">
         <div class="section-header">
-            <span class="section-title">Featured Items</span>
+            <span class="section-title">Zombie Survival Loadout</span>
         </div>
         <div id="items-container" class="items-grid">
             <div class="loading">Loading items</div>

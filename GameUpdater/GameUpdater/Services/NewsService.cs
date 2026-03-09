@@ -76,8 +76,8 @@ public class NewsService : INewsService
         {
             new NewsItem
             {
-                Title = "Welcome to Gunz Online!",
-                Summary = "Thank you for playing Gunz Online. Check back here for the latest updates and news.",
+                Title = "Welcome to 7 Days to Die!",
+                Summary = "Survive, build, and conquer. Check back here for the latest server updates and events.",
                 Category = "NEWS",
                 Date = DateTime.Now
             }
