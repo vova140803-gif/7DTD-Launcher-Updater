@@ -100,7 +100,7 @@ public class MainViewModel : ViewModelBase
         set => SetProperty(ref _newsItems, value);
     }
 
-    public string WindowTitle => "Gunz Online Launcher";
+    public string WindowTitle => "7 Days to Die Launcher";
 
     #endregion
 

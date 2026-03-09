@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gunz Online - Admin Panel</title>
+    <title>7 Days to Die - Admin Panel</title>
     <style>
         * {
             margin: 0;
@@ -245,7 +245,7 @@
 <body>
     <div class="container">
         <header>
-            <h1>Gunz Online Admin Panel</h1>
+            <h1>7DTD Zombie Admin Panel</h1>
             <a href="../index.php" target="_blank" class="btn btn-primary">View Launcher Page</a>
         </header>
 
@@ -357,7 +357,7 @@
                     <div class="form-row">
                         <div class="form-group">
                             <label>Banner Text</label>
-                            <input type="text" id="banner-text" placeholder="Welcome to Gunz Online">
+                            <input type="text" id="banner-text" placeholder="Welcome to 7 Days to Die">
                         </div>
                         <div class="form-group">
                             <label>Banner Subtext</label>

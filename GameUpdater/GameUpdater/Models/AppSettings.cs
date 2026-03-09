@@ -15,11 +15,11 @@ public class AppSettings
 /// </summary>
 public class LauncherSettings
 {
-    public string PatchUrl { get; set; } = "http://localhost/gunz/patch.json";
-    public string UpdateBaseUrl { get; set; } = "http://localhost/gunz/update/";
-    public string NewsUrl { get; set; } = "http://localhost/GunzWeb/api/news.php";
-    public string WebContentUrl { get; set; } = "http://localhost/GunzWeb/";
-    public string GameExecutable { get; set; } = "Gunz.exe";
+    public string PatchUrl { get; set; } = "http://localhost/7dtd/patch.json";
+    public string UpdateBaseUrl { get; set; } = "http://localhost/7dtd/update/";
+    public string NewsUrl { get; set; } = "http://localhost/7dtd/api/news.php";
+    public string WebContentUrl { get; set; } = "http://localhost/7dtd/";
+    public string GameExecutable { get; set; } = "7DaysToDie.exe";
     public bool SkipUpdateOnStartup { get; set; } = false;
     public bool MinimizeOnGameLaunch { get; set; } = true;
     public bool CloseOnGameLaunch { get; set; } = false;
@@ -30,10 +30,10 @@ public class LauncherSettings
 /// </summary>
 public class SocialLinks
 {
-    public string WebsiteUrl { get; set; } = "https://vgunz.net";
-    public string ShopUrl { get; set; } = "https://vgunz.net/shop";
-    public string SupportUrl { get; set; } = "https://vgunz.net/support";
-    public string DiscordUrl { get; set; } = "https://discord.gg/vgunz";
+    public string WebsiteUrl { get; set; } = "https://7daystodie.com";
+    public string ShopUrl { get; set; } = "https://7daystodie.com/shop";
+    public string SupportUrl { get; set; } = "https://7daystodie.com/support";
+    public string DiscordUrl { get; set; } = "https://discord.gg/7daystodie";
     public string YoutubeUrl { get; set; } = "";
     public string FacebookUrl { get; set; } = "";
     public string InstagramUrl { get; set; } = "";

@@ -5,7 +5,7 @@ namespace GameUpdater.Configuration;
 /// LAUNCHER CONFIGURATION - EDIT THIS FILE TO CUSTOMIZE YOUR LAUNCHER
 /// =======================================================================
 ///
-/// This is the central configuration file for the Gunz Online Launcher.
+/// This is the central configuration file for the 7 Days to Die Launcher.
 /// All URLs, settings, and social links are configured here.
 ///
 /// After making changes, rebuild the project to apply them.
@@ -21,30 +21,30 @@ public static class LauncherConfig
     /// URL to the patch.json file that contains file update information
     /// Example: "http://yourserver.com/update/patch.json"
     /// </summary>
-    public static string PatchUrl => "http://localhost/GunzWeb/Update/patch.json";
+    public static string PatchUrl => "http://localhost/7dtd/Update/patch.json";
 
     /// <summary>
     /// Base URL for downloading update files (folder containing the files)
     /// Example: "http://yourserver.com/update/"
     /// </summary>
-    public static string UpdateBaseUrl => "http://localhost/GunzWeb/Update/";
+    public static string UpdateBaseUrl => "http://localhost/7dtd/Update/";
 
     /// <summary>
     /// URL to the news API endpoint
     /// Example: "http://yourserver.com/api/news.php"
     /// </summary>
-    public static string NewsUrl => "http://localhost/GunzWeb/api/news.php";
+    public static string NewsUrl => "http://localhost/7dtd/api/news.php";
 
     /// <summary>
     /// URL for the embedded web content displayed in the launcher
     /// Example: "http://yourserver.com/" or leave empty to show fallback
     /// </summary>
-    public static string WebContentUrl => "http://localhost/GunzWeb/";
+    public static string WebContentUrl => "http://localhost/7dtd/";
 
     /// <summary>
     /// Name of the game executable to launch
     /// </summary>
-    public static string GameExecutable => "Gunz.exe";
+    public static string GameExecutable => "7DaysToDie.exe";
 
 
     // =====================================================================
@@ -76,22 +76,22 @@ public static class LauncherConfig
     /// <summary>
     /// Main website URL (WEBSITE button in footer)
     /// </summary>
-    public static string WebsiteUrl => "https://gunzonline.net";
+    public static string WebsiteUrl => "https://7daystodie.com";
 
     /// <summary>
     /// Shop/Store URL (SHOP button in footer)
     /// </summary>
-    public static string ShopUrl => "https://gunzonline.net/shop";
+    public static string ShopUrl => "https://7daystodie.com/shop";
 
     /// <summary>
     /// Support/Help URL (SUPPORT button in footer)
     /// </summary>
-    public static string SupportUrl => "https://gunzonline.net/support";
+    public static string SupportUrl => "https://7daystodie.com/support";
 
     /// <summary>
     /// Discord invite link (leave empty to hide button)
     /// </summary>
-    public static string DiscordUrl => "https://discord.gg/gunzonline";
+    public static string DiscordUrl => "https://discord.gg/7daystodie";
 
     /// <summary>
     /// YouTube channel URL (leave empty to hide button)

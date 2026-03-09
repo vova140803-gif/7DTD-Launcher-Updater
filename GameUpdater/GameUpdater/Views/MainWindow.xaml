@@ -7,7 +7,7 @@
         xmlns:converters="clr-namespace:GameUpdater.Converters"
         xmlns:wv2="clr-namespace:Microsoft.Web.WebView2.Wpf;assembly=Microsoft.Web.WebView2.Wpf"
         mc:Ignorable="d"
-        Title="Gunz Online Launcher"
+        Title="7 Days to Die Launcher"
         Width="950" Height="580"
         WindowStyle="None"
         AllowsTransparency="True"
@@ -57,11 +57,11 @@
                                 HorizontalAlignment="Left">
                         <!-- Logo Icon -->
                         <Path Data="{StaticResource LogoIcon}"
-                              Fill="#2196F3"
+                              Fill="#B71C1C"
                               Width="24" Height="24"
                               Stretch="Uniform"/>
 
-                        <TextBlock Text="GUNZ ONLINE"
+                        <TextBlock Text="7 DAYS TO DIE"
                                    FontFamily="Segoe UI"
                                    FontSize="15"
                                    FontWeight="Bold"
@@ -76,8 +76,8 @@
                                 VerticalAlignment="Center">
 
                         <!-- Social Media Label -->
-                        <TextBlock Text="FOLLOW US"
-                                   Foreground="#4A5568"
+                        <TextBlock Text="STAY ALIVE"
+                                   Foreground="#8A6E6E"
                                    FontSize="10"
                                    FontWeight="SemiBold"
                                    VerticalAlignment="Center"
@@ -175,7 +175,7 @@
                                        FontFamily="Segoe UI"
                                        FontSize="11"
                                        FontWeight="SemiBold"
-                                       Foreground="#4A5568"/>
+                                       Foreground="#8A6E6E"/>
                         </Border>
 
                         <!-- News List -->
@@ -209,7 +209,7 @@
                                                 <Border Grid.Column="0"
                                                         Width="26" Height="26"
                                                         CornerRadius="5"
-                                                        Background="#2196F3"
+                                                        Background="#B71C1C"
                                                         VerticalAlignment="Top">
                                                     <Path Data="{StaticResource LogoIcon}"
                                                           Fill="White"
@@ -230,7 +230,7 @@
                                                     <TextBlock Text="{Binding Summary}"
                                                                FontFamily="Segoe UI"
                                                                FontSize="11"
-                                                               Foreground="#4A5568"
+                                                               Foreground="#8A6E6E"
                                                                TextWrapping="Wrap"
                                                                Margin="0,3,0,0"
                                                                MaxHeight="36"
@@ -274,20 +274,20 @@
                                     HorizontalAlignment="Center"
                                     Visibility="Collapsed">
                             <Path Data="{StaticResource LogoIcon}"
-                                  Fill="#2196F3"
+                                  Fill="#B71C1C"
                                   Width="64" Height="64"
                                   Stretch="Uniform"
                                   Opacity="0.3"/>
-                            <TextBlock Text="GUNZ ONLINE"
+                            <TextBlock Text="7 DAYS TO DIE"
                                        FontSize="20"
                                        FontWeight="Bold"
                                        Foreground="#FFFFFF"
                                        HorizontalAlignment="Center"
                                        Margin="0,12,0,0"
                                        Opacity="0.3"/>
-                            <TextBlock Text="Welcome to the battlefield"
+                            <TextBlock Text="The dead are coming"
                                        FontSize="11"
-                                       Foreground="#4A5568"
+                                       Foreground="#8A6E6E"
                                        HorizontalAlignment="Center"
                                        Margin="0,4,0,0"/>
                         </StackPanel>
@@ -323,7 +323,7 @@
                                        FontFamily="Segoe UI"
                                        FontSize="11"
                                        FontWeight="SemiBold"
-                                       Foreground="#2196F3"
+                                       Foreground="#B71C1C"
                                        Margin="16,0,0,0"
                                        Visibility="{Binding IsUpdating, Converter={StaticResource BoolToVisibilityConverter}}"/>
                         </StackPanel>
